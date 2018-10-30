@@ -1,0 +1,62 @@
+/* pages/carfirst/carfirst.wxss */
+/* pages/two/two.wxss */
+page{
+  background-color: #ccc;
+  /* height: 2000rpx; */
+  /* overflow: hidden; */
+  text-align: center;
+}
+.sex,.age,.car,.btn{
+  font-size: 30px;
+}
+.sex-model{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.male,.female{
+  width: 400rpx;
+  height: 100rpx;
+  border-radius: 40rpx;
+  background-color:rgb(248,173,133);
+  margin: 20rpx;
+}
+
+.age-model,.car-model{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.sex-item,.age-item,.car-item{
+  width: 320rpx;
+  height: 100rpx;
+  border-radius: 32rpx;
+  background-color: rgb(248,173,133);
+  margin: 20rpx 20rpx;
+}
+.sex-itemactive,.age-itemactive,.car-itemactive{
+  background-color:  #f60;
+  width: 320rpx;
+  height: 100rpx;
+  border-radius: 32rpx;
+  
+  margin: 20rpx 20rpx;
+}
+.btn-model{
+  /* position: fixed; */
+  display: flex;
+   flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 100rpx;
+}
+.btn-item{
+  /* width: 300rpx;
+   */
+   width: 100%;
+   height: 100rpx;
+  border-radius: 32rpx;
+  background-color: greenyellow;
+ position: fixed;
+ bottom: 0;
+ 
+}

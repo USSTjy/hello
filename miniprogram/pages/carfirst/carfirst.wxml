@@ -1,0 +1,75 @@
+<!--pages/carfirst/carfirst.wxml-->
+<view>
+<form bindsubmit='getCustomer'>
+  <!-- 性别 -->
+  <view class='sex'>
+       <view>性别</view>
+       <view>
+          <radio-group class="sex-model" name="sexList">
+             <!-- <radio value='male' class='male'>男</radio>
+             <radio value='female' class='female'>女</radio> -->
+
+             <label wx:for="{{sexList}}" wx:key="id">
+             <view  class='sex-item{{item.index==sexIndex?"active":""}}' data-sindex="{{item.index}}" bindtap="radioChangeSex" >
+                    {{item.sex}}
+                 </view>
+               <radio value='{{item.sex}}' class='age-item' hidden='true'>
+                 
+             </radio>
+         </label>
+          </radio-group>
+       </view>
+   </view>
+   <!-- 年龄段----------- -->
+   <view class='age'>
+      <view>年龄</view>
+      <view>
+         <radio-group class="age-model" name="ageList">
+
+         <label wx:for="{{ageList}}" wx:key="id">
+            <view class='age-item{{item.index==agesIndex?"active":""}}' data-aindex="{{item.index}}" bindtap="radioChangeAge">
+                    {{item.age}}
+                 </view>
+           <radio value='{{item.age}}' class='age-item' hidden='true'>
+                 
+             </radio>
+         </label>
+            
+         </radio-group>
+      </view>
+   </view>
+
+<!-- --------车型选择----------- -->
+   <view class='car'>
+      <view>车型选择</view>
+      <view>
+          <radio-group class="car-model" name="carList"  >
+
+         <label wx:for="{{carList}}" wx:key="id" >
+              
+               
+            <view class='car-item{{item.index==carIndex?"active":""}}' data-cindex="{{item.index}}" bindtap="radioChangeCar">
+                    {{item.car}}
+               </view>    
+           <radio value='{{item.car}}' class='car-item' hidden='true'>
+             </radio>
+             <!-- <view value='{{item}}' class='car-item'>{{item}}</view> -->
+         </label>
+            
+         </radio-group>
+      </view>
+   </view>
+
+  <!-- 、、、、、、 提交按钮、、、、、 -->
+  <view class='btn'>
+      <!-- <view>提交&重置</view> -->
+      <view class='btn-model'>
+          <button form-type='submit' class='btn-item'>提交</button>
+          <!-- <button form-type='reset' class='btn-item right'>重置</button> -->
+      </view>
+  </view>
+
+</form>
+   
+</view>
+

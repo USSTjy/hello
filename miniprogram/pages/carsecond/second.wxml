@@ -1,0 +1,28 @@
+<!--pages/carsecond/second.wxml-->
+
+<!--pages/other/other.wxml-->
+<view class='container'>
+<form bindsubmit='guwen'>
+   <radio-group class="radio-group" class="gukeList" name="guwenList" >
+   <label class="radio" wx:for="{{guwenInfo}}" wx:key="id">
+   <view class='middle{{item.index==nameIndex?"active":""}}' data-index="{{item.index}}" bindtap="selectChange" >
+       {{item.name}}
+      
+     </view>
+    <radio value=' {{item.name}}' hidden='true' >
+    </radio>
+  </label>
+
+</radio-group>
+
+<view class='btn'>
+   <button form-type='submit'>
+      确认提交
+   </button>
+</view>
+</form>
+
+
+
+</view>
+

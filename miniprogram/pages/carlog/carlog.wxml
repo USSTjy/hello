@@ -1,0 +1,37 @@
+<!--pages/carlog/carlog.wxml-->
+<view wx:if="{{!all.length}}">
+     <view class='none'>
+        <view>
+        <image src='../../images/nodata.png'></image>
+        </view>
+        <view>暂无记录</view>
+     </view>
+</view>
+<view>
+   <scroll-view scroll-y="{{true}}" class='logs' >
+      <label wx:for="{{all}}" wx:key="">
+      <view>{{item.time}}</view>
+      <view class='logs-item'>
+          <view class='customer'>{{item.sex}}</view>
+          <view class='customer'>{{item.age}}</view>
+          <view class='customer'>{{item.car}}</view>
+          <view class='saleman'>{{item.guwen}}</view>
+      </view>
+         
+      </label>
+   </scroll-view>
+   <view>
+       <button bindtap='switchModal'class="btn" type='warn'>
+       <view>清除记录</view>
+       </button>
+       <modal 
+	      	title="提示" 
+	      	confirm-text="确定" 
+	      	cancel-text="取消" 
+		      hidden="{{modalHidden}}" 
+	      	bindconfirm="clearLog" 
+		      bindcancel="switchModal">
+	    是否清除记录？此操作不可恢复!
+	</modal>
+   </view>
+</view>

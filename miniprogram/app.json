@@ -1,0 +1,40 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/carfirst/carfirst",
+    "pages/carsecond/second",
+    "pages/carlog/carlog",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+   
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "车匹配",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/carfirst/carfirst",
+        "text": "首页",
+        "iconPath": "images/wechat.png",
+        "selectedIconPath": "images/wechatHL.png"
+      },
+      {
+        "pagePath": "pages/carlog/carlog",
+        "iconPath": "images/wechat.png",
+        "selectedIconPath": "images/wechatHL.png",
+        "text": "历史记录"
+      }
+    ]
+  }
+}

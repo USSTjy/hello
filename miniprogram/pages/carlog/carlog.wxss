@@ -1,0 +1,37 @@
+/* pages/carlog/carlog.wxss */
+.none{
+  text-align: center;
+}
+.none image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 200rpx;
+  /* background-color: pink; */
+}
+.logs{
+  height: 900rpx;
+  text-align: center;
+}
+.logs-item{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.customer,.saleman{
+  width: 180rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  margin: 10rpx 5rpx;
+}
+.customer{
+  background-color: rgb(79, 158, 254)
+}
+.saleman{
+  background-color: rgb(20, 10,249)
+}
+.btn{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: 100rpx;
+}
